@@ -2,7 +2,6 @@
 published: true
 layout: blog/post
 title: Mans Not Hot
-<<<<<<< HEAD
 date: '2021-12-20 10:08:00 +0800'
 author: Alex Chia
 summary: Man needs to be hot
@@ -14,20 +13,6 @@ image: big-shaq.png
 Pa pa pa perrrrrahhhhh! Pap! Pap! Pah!
 
 ![big-shaq.png]({{site.baseurl}}/img/big-shaq.png)
-=======
-date: '2021-12-20 10:08:00'
-author: Alex Chia
-summary: Man needs to be hot
-image: >-
-  https://versus.uk.com/wp-content/uploads/2017/10/Screen-Shot-2017-10-26-at-13.37.29.png
-category: category1
----
-## Mans Not Hot
-
-Pa pa p perrrrrahhhhh! Pap! Pap! Pah!
-
-![Big Shaq]({{site.baseurl}}/https://versus.uk.com/wp-content/uploads/2017/10/Screen-Shot-2017-10-26-at-13.37.29.png)
->>>>>>> 4b950dc (Create 2021-12-20-mans-not-hot.md)
 
 "Init Blood"
 
