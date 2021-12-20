@@ -15,8 +15,12 @@ category: category1
 image: big-shaq.png
 =======
 category: category1
+<<<<<<< HEAD
 image: img/big-shaq.png
 >>>>>>> 31df984 (Update 2021-12-20-mans-not-hot.md)
+=======
+image: big-shaq.png
+>>>>>>> 083205b (Update 2021-12-20-mans-not-hot.md)
 ---
 ## Mans Not Hot
 
