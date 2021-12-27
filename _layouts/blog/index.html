@@ -9,9 +9,9 @@
     <div class="l-main-container js-blog">
       {% include header.html %}
 
-      <div class="l-banner -section-2 -ocean-news">
+      {% include breadcrumbs.html %}
 
-        <!-- {% include breadcrumbs.html %} -->
+      <div class="l-banner -section-2 -ocean-news">
 
         <div class="wrap -ocean-wrap">
           <h1 class="c-section-title -ocean-section-title -light">{{ page.title }}</h1>
@@ -29,7 +29,7 @@
               <select>
                 <option value="">All categories</option>
                 {% for category in site.categories %}
-                  {% unless category[0] == "blog" %}
+                  {% unless category[0] == "blog" or category[0] == "events" %}
                     <option value="{{ category | first | remove:' ' | downcase }}">
                       {{ category | first }}
                     </option>
@@ -58,15 +58,19 @@
             </div>
           </div>
 
-          <button class="c-button -primary -small" id="js--share" type="button" name="share"> share</button>
+          <!-- <button class="c-button -primary -small" id="js--share" type="button" name="share"> share</button> -->
 
         </div>
       </div>
 
-      <div class="l-blog">
-        {% for post in paginator.posts %}
-          {% include modules/post_list_module.html %}
-        {% endfor %}
+      <div class="wrap">
+        <div class="l-blog">
+          {% for post in paginator.posts %}
+            {% if post.tag != 'events' %}
+              {% include modules/post_list_module.html %}
+            {% endif %}
+          {% endfor %}
+        </div>
       </div>
 
       <div class="l-toolbar -pagination -footer">
@@ -91,11 +95,19 @@
 
       {% include footer.html %}
 
-      </div>
+    </div>
     <script>
       var SITEURL = '{{ site.baseurl }}' || null;
     </script>
     <script src="{{ site.baseurl }}/js/main_bundle.js"></script>
+    <script>
+      // var pageName = '{{ page.page-name | json }}';
+      var bannerCheck =  $('div.l-banner').hasClass('-ocean-news');
+
+      bannerCheck && $(".chzn-container-single .chzn-single").addClass(`-ocean-news`);
+      bannerCheck && $(".btn-drop-down").addClass(`-ocean-news`);
+
+    </script>
   </body>
 
 </html>
