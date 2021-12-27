@@ -2011,14 +2011,14 @@ select {
         align-items: center;
     font-weight: 700; }
     .share-this .wrap .twitter-btn {
-      background-image: url("/img/logos/twitter.svg");
+      background-image: url("/goal16/img/logos/twitter.svg");
       background-color: #51ABC2;
       margin-left: 1rem; }
       .share-this .wrap .twitter-btn:hover {
         cursor: pointer;
         background-color: rgba(81, 171, 194, 0.7); }
     .share-this .wrap .share-btn {
-      background-image: url("/img/logos/share.svg");
+      background-image: url("/goal16/img/logos/share.svg");
       background-color: #176875;
       margin-left: 0.5rem; }
       .share-this .wrap .share-btn:hover {
