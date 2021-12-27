@@ -1,13 +1,12 @@
 
 .m-markdown {
   max-width: 100%;
-  color: $deep-black;
 
   > .content {
-    margin-top: rem(10px);
+    margin-top: rem(20px);
 
     @media screen and (min-width: $screen-m) {
-      margin-top: rem(25px);
+      margin-top: rem(50px);
     }
 
     // Paragraphs, links
@@ -28,12 +27,9 @@
     }
 
     a {
-      // color: $font-color-3;
-      color: $font-color-13;
-      text-decoration: underline;
-
+      color: $font-color-3;
       &:hover {
-        color: $color-3;
+        color: $color-4;
       }
     }
 
