@@ -1341,19 +1341,23 @@ select {
   text-transform: uppercase;
   line-height: 1.2em; }
 
+#aboutSelector.btn-drop-down {
+  border: 1px solid #57BAB0; }
+  #aboutSelector.btn-drop-down:after {
+    width: 5px;
+    height: 5px;
+    border-top: 2px solid #57BAB0;
+    border-left: 2px solid #57BAB0;
+    transform: rotate(225deg);
+    pointer-events: none; }
 #aboutSelector .chzn-container-single .chzn-drop {
-  border-bottom: 1px solid #176875;
-  border-left: 1px solid #176875;
-  border-right: 1px solid #176875; }
+  border-bottom: 1px solid #57BAB0;
+  border-left: 1px solid #57BAB0;
+  border-right: 1px solid #57BAB0; }
 #aboutSelector .chzn-container .chzn-results .active-result {
-  color: #176875; }
-#aboutSelector.btn-drop-down:after {
-  width: 5px;
-  height: 5px;
-  border-top: 2px solid #176875;
-  border-left: 2px solid #176875;
-  transform: rotate(225deg);
-  pointer-events: none; }
+  color: #57BAB0; }
+#aboutSelector .chzn-container-single .chzn-single {
+  color: #57BAB0; }
 
 .l-toolbar {
   position: relative;
