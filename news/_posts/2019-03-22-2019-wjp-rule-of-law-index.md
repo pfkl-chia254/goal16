@@ -5,6 +5,7 @@ title: 2019 WJP Rule of Law Index
 image: rule-of-law.jpg
 date: '2019-02-28'
 author: World Justice Project
+tag: "news"
 summary: >-
   The World Justice Project Rule of Law Index® measures how the rule of law is
   experienced and perceived by the general public in 126 countries and
